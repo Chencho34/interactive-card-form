@@ -1,0 +1,19 @@
+
+@use 'var';
+
+.error{
+    color: var.$Red;
+    margin: -10px 0 18px;
+    font-size: 0.6em;
+}
+
+.form__errors--container{
+    display: flex;
+    gap: 9px
+    // justify-content: space-around;
+}
+
+.form__errors--container div{
+    width: 100px;
+    // border: 1px solid green;
+}

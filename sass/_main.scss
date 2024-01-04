@@ -1,0 +1,31 @@
+
+
+.main__container{
+    // border: 1px solid black;
+    width: 375px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    // background-color: white;
+    &--bg{
+        background-image: url('../images/bg-main-mobile.png');
+        background-repeat: no-repeat;
+        height: 240px;
+        position: relative;
+    }
+    &--form{
+        padding: 90px 24px 45px;
+        
+    }
+    @media (min-width: 1440px){
+        width: 1440px;
+        display: flex;
+        &--bg{
+            background-image: url('../images/bg-main-desktop.png');
+            width: 900px;
+            height: 900px;
+        }
+    }
+}

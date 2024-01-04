@@ -1,0 +1,42 @@
+
+@use 'var';
+@use 'form';
+
+.thanks-section{
+    display: none;
+    // border: 1px solid red;
+    // width: 375px;
+    // width: 100px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    &__img{
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: var.$Very-dark-violet;
+        margin-bottom: 24px;
+    }
+    &__text{
+        color: var.$Dark-grayish-violet;
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 24px;
+
+    }
+    &__button{
+        @extend .form__submit;
+    }
+
+    @media(min-width: 1440px){
+        margin-top:  180px;
+        width: 385px;
+    }
+    
+}
